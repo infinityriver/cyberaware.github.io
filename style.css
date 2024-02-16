@@ -1,0 +1,1915 @@
+@font-face {
+    font-family: "RalewayRegular"; 
+  
+    src: url("font/ofont.ru_Radiotechnika.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;  
+} 
+  
+h1{
+    font-family: "RalewayRegular";
+    color: #000000
+}
+
+body {
+    background-color: #000;
+    height: 190vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#pre {
+    width: 100%;
+    top: 175%;
+    position: absolute;
+    background-color: #e4c8fc;
+}
+
+#hello {
+    color: #510391;
+    width: 55%;
+    font-size: calc(0.1rem + 0.6vw);
+    position: absolute;
+    left: 30%;
+}
+
+#textt {
+    position: absolute;
+    width: 30%;
+    top: 37%;
+    left: 14%;
+    color:#510391;
+    font-size: calc(0.1rem + 0.6vw);
+}
+
+#show {
+    color: #510391;
+    width: 100%;
+    font-size: calc(0.1rem + 0.9vw);
+    position: absolute;
+    left: 100%;
+    top: 70%;
+}
+
+#show.active {
+    transition: all 30s ease;
+    transform: translateX(-210%);
+}
+
+#show.active1 {
+    left: 100%;
+}
+
+
+.amphora7 {
+    width: 3%;
+    height: 6%;
+    background: linear-gradient(to left, #510391, #e4c8fc);
+    position: absolute;
+    left: 2%;
+    top: 178%;
+    border-radius: 38% 62% 63% 40% / 41% 44% 56% 59%;
+    cursor: pointer;
+}
+
+#tgg {
+    width: 70%;
+    height: 70%;
+}
+
+#vkk {
+    width: 70%;
+    height: 70%;
+}
+
+.amphora91 {
+    width: 15%;
+    height: 25%;
+    left: 10%;
+    top: 100%;
+    position: absolute;
+}
+
+.amphora9 {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    
+    border-radius: 38% 62% 63% 40% / 41% 44% 56% 59%;
+    cursor: pointer;
+    backdrop-filter: blur(10px); /* применяет размытие заднему фону элемента */
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid #fff;
+    z-index: 5;
+    transition: all 0.5s ease;
+}
+
+.amphora9.active {
+ 
+    box-shadow: 0 0 15px 3px rgba(160, 174, 205, 0.7);
+}
+
+.amphora9.activeEnd {
+    transition: all 2s ease;
+    box-shadow: 0 0 15px 9px rgba(160, 174, 205, 0.7);
+}
+
+.amphora9:hover {
+    transition: all 1s ease;
+    transform: scale(1.2);
+}
+
+
+.cercle5 {
+    background-color: none;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border: 10px solid #510391;
+    position: absolute;
+    bottom: -4%;
+    left: 10%;
+    z-index: 0;
+    transition: all 0.5s ease;
+    
+}
+
+.amphora9:hover ~ .cercle5 {
+    transition: all 1s ease;
+    bottom: -20%;
+    transform: translateX(100%);
+}
+
+.cercle5.active {
+
+    box-shadow: 0 0 15px 3px rgba(160, 174, 205, 0.7);
+}
+
+.cercle5.activeEnd {
+    transition: all 2s ease;
+    box-shadow: 0 0 15px 9px rgba(160, 174, 205, 0.7);
+}
+
+.cercle6 {
+    background-color: none;
+    width: 47%;
+    height: 50%;
+    border-radius: 50%;
+    border: 10px solid #510391;
+    position: absolute;
+    top: -5%;
+    left: 10%;
+    z-index: 0;
+    transition: all 0.5s ease;
+    
+}
+
+.cercle6.active {
+
+    box-shadow: 0 0 15px 3px rgba(160, 174, 205, 0.7);
+}
+
+.cercle6.activeEnd {
+    transition: all 2s ease;
+    box-shadow: 0 0 15px 9px rgba(160, 174, 205, 0.7);
+}
+
+.amphora9:hover ~ .cercle6 {
+    transition: all 1s ease;
+    top: -20%;
+    transform: translateX(-40%);
+}
+
+.triangle {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid #510391; /* Здесь же меняем цвет */
+    
+}
+
+.amphora8 {
+    width: 3%;
+    height: 6%;
+    background: linear-gradient(to left, #510391, #e4c8fc);
+    position: absolute;
+    left: 7%;
+    top: 178%;
+    border-radius: 38% 62% 63% 40% / 41% 44% 56% 59%;
+    cursor: pointer;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    background-color: none;
+    opacity: 0;
+    z-index: 6;
+}
+
+.Name {
+    position: absolute;
+    top: 11%;
+    left: 5%;
+    color: #fff;
+    font-size: calc(0.4rem + 1vw);
+    text-transform: uppercase;
+    z-index: 7;
+}
+
+.home {
+    color:#fff;
+    font-size: 1rem;
+    position: absolute;
+    font-size: calc(0.5rem + 1vw);
+    top: 11%;
+    right: 5%;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 7;
+}
+
+
+.header.active {
+    transition: all 4s ease;
+    opacity: 1;
+}
+
+/*------------------------------------------------------------------*/
+
+.block3 {
+    margin-left: -6%;
+    margin-top: 15%;
+    height: 30%;
+    width: 8%;
+    position: fixed;
+    transition: all 1s ease;
+    z-index: 10;
+}
+
+#block1 {
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    margin-right: -4px;
+    border-radius: 20px;
+    border: 10px solid #000000;
+}
+
+#block2 {
+    width: 15%;
+    height: 20%;
+    background-color: #000000;
+    border-radius: 0 15px 15px 0;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: trasnslate(-50%, -50%);
+    transition: all 1s ease;
+    cursor: pointer;
+    border: 5px solid #000000
+}
+
+.block3.active {
+    transition: all 1s ease;
+    margin-left: 0;
+}
+
+#block2.active {
+    transition: all 1s ease;
+    display: none;
+}
+
+.image {
+    width: 23%;
+    height: 12%;
+    background-repeat: no-repeat;
+    transform: scale(1.5);
+    background-position: center;
+    z-index: 10;
+    position: absolute;
+    top: 10%;
+    left: 24%;
+    cursor: pointer;
+
+}
+
+.image01 {
+    width: 23%;
+    height: 12%;
+    background-repeat: no-repeat;
+    transform: scale(1.5);
+    background-position: center;
+    z-index: 10;
+    position: absolute;
+    top: 35%;
+    left: 24%;
+    cursor: pointer;
+
+}
+
+@keyframes changeShape {
+    0% {
+        border-radius: 38% 62% 63% 40% / 41% 44% 56% 59%;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 41% 44% 56% 59% / 38% 62% 63% 40%;
+
+    }
+    50% {
+        border-radius: 38% 62% 63% 40% / 41% 44% 56% 59%;
+
+    }
+    75% {
+        border-radius: 41% 44% 56% 59% / 38% 62% 63% 40%;
+
+    }
+    100% {
+        border-radius: 38% 62% 63% 40% / 41% 44% 56% 59%;
+        transform: rotate(360deg);
+    }
+}
+  
+  .amphora {
+    width: 23%;
+    height: 45%;
+    background: linear-gradient(to left, #510391, #e4c8fc);
+    position: absolute;
+    left: -3%;
+    top: -14%;
+    animation: changeShape 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+  }
+
+
+.save {
+    color:#fff;
+    position: absolute;
+    font-size: calc(1rem + 2vw);
+    top: 27%;
+    left: 12%;
+    text-transform: uppercase;
+    z-index: 7;
+}
+
+#cartss {
+    height: 30%;
+    width: 40%;
+    position: absolute;
+    right: 5%;
+    top: 130%;
+    background-color: none;
+    z-index: 4;
+}
+
+.carts {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    background-color: none;
+    display: flex;
+}
+
+/*--------------------*/
+
+#newss {
+    width: 40%;
+    height: 10%;
+    font-size: calc(1rem + 1vw);
+    color: #e4c8fc;
+}
+
+.cart {
+    width: 30%;
+    height: 90%;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 10%;
+    cursor: pointer;
+    background: linear-gradient(to left, #510391, #e4c8fc);
+    backdrop-filter: blur(80px); 
+    z-index: 2;
+    transition: transform 1s ease;
+}
+
+#kasp {
+    width: 50%;
+    height: 50%;
+    transform: translate(48%, 50%);
+    border-radius: 5px;
+}
+
+#gos {
+    width: 50%;
+    height: 50%;
+    transform: translate(48%, 50%);
+    border-radius: 5px;
+}
+
+#zog {
+    width: 50%;
+    height: 50%;
+    transform: translate(48%, 50%);
+    border-radius: 5px;
+}
+
+.cart2 {
+    width: 30%;
+    height: 90%;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 10%;
+    cursor: pointer;
+    background: linear-gradient(to left, #510391, #e4c8fc);
+    backdrop-filter: blur(80px);
+    left: -5%;
+    z-index: 1;
+    transition: transform 1s ease;
+}
+
+.cart3 {
+    width: 30%;
+    height: 90%;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 10%;
+    cursor: pointer;
+    background: linear-gradient(to left, #510391, #e4c8fc);
+    backdrop-filter: blur(80px);
+    left: -10%;
+    z-index: 0;
+    transition: transform 1s ease;
+}
+
+.cart:hover {
+    transform: translateY(-5%);
+}
+
+.cart2:hover {
+    transform: translateY(-5%);
+    z-index: 3;
+}
+
+.cart3:hover {
+    transform: translateY(-5%);
+    z-index: 3;
+}
+
+/*--------------------*/
+
+.blockTop {
+    width: 90%;
+    height: 92%;
+    position: absolute;
+    background-color: none;
+    border-radius: 10%;
+    left: 4%;
+    top: 2%;
+    z-index: 5;
+}
+
+.blockTop:hover {
+    transition: all 1s ease;
+    transform: scale(2);
+    z-index: 5;
+}
+
+.cartsDev {
+    width: 12%;
+    height: 25%;
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    background-color: none;
+}
+
+.cartDev {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 10%;
+    cursor: pointer;
+    backdrop-filter: blur(10px); /* применяет размытие заднему фону элемента */
+    background-color: rgba(255, 255, 255, 0.3); /* устанавливает полупрозрачный цвет фона для создания эффекта стекла */
+    z-index: 2;
+    left: 4%;
+    top: 2%;
+    transition: all 1s ease;
+}
+
+.blockTop:hover ~ .cartDev {
+    transition: all 1s ease;
+    transform: scale(2);
+    z-index: 3;
+}
+
+.cartDev.active {
+    box-shadow: 0 0 15px 3px rgba(160, 174, 205, 0.7);
+}
+
+.cartDev.activeEnd {
+    transition: all 1s ease;
+    box-shadow: 0 0 15px 9px rgba(160, 174, 205, 0.7);
+}
+
+.cercle {
+    background-color: none;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    border: 10px solid #510391;
+    position: absolute;
+    left: -3%;
+    top: 10%;
+    transition: all 0.5s ease;
+    
+}
+
+.cercle.active {
+    box-shadow: 0 0 15px 3px rgba(160, 174, 205, 0.7);
+}
+
+.cercle.activeEnd {
+    transition: all 1s ease;
+    box-shadow: 0 0 15px 9px rgba(160, 174, 205, 0.7);
+}
+
+.blockTop:hover ~ .cercle {
+    transition: all 1s ease;
+    transform: scale(2);
+    top: 45%;
+    left: -45%;
+}
+
+.cercle1 {
+    background-color: none;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border: 10px solid #510391;
+    position: absolute;
+    bottom: -4%;
+    left: 10%;
+
+    transition: all 0.5s ease;
+    
+}
+
+.cercle1.active {
+    box-shadow: 0 0 15px 3px rgba(160, 174, 205, 0.7);
+}
+
+.cercle1.activeEnd {
+    transition: all 1s ease;
+    box-shadow: 0 0 15px 9px rgba(160, 174, 205, 0.7);
+}
+
+.blockTop:hover ~ .cercle1 {
+    transition: all 1s ease;
+    transform: scale(2);
+    bottom: -35%;
+    left: 55%;
+}
+
+
+.cercle2 {
+    background-color: none;
+    width: 32%;
+    height: 30%;
+    border-radius: 50%;
+    border: 10px solid #510391;
+    position: absolute;
+    top: -4%;
+    right: -4%;
+    transition: all 0.5s ease;
+    
+}
+
+.cercle2.active {
+    box-shadow: 0 0 15px 3px rgba(160, 174, 205, 0.7);
+}
+
+.cercle2.activeEnd {
+    transition: all 1s ease;
+    box-shadow: 0 0 15px 9px rgba(160, 174, 205, 0.7);
+}
+
+.blockTop:hover ~ .cercle2 {
+    transition: all 1s ease;
+    transform: scale(2);
+    top: -40%;
+    right: -30%;
+}
+
+.devops {
+    position: absolute;
+    width: 53%;
+    height: 50%;
+    left: 40%;
+    top: 3%;
+    z-index: 3;
+    transition: all 1s ease;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.blockTop:hover ~ .devops{
+    transition: all 1s ease;
+    transform: scale(1.5);
+    left: -15%;
+    top: -20%;
+    z-index: 3;
+}
+
+.nameDev {
+    width: 60%;
+    position: absolute;
+    color: #510391;
+    font-size: calc(0.5rem + 1vw);
+    top: 28%;
+    left: 8%;
+    z-index: 4;
+    transition: all 0.5s ease;
+}
+
+.blockTop:hover ~ .nameDev{
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.internet {
+    width: 7%;
+    height: 7%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 6;
+    background-color: none;
+    border: 2px solid #510391;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1rem;
+    color: #510391;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.1s ease;
+}
+
+.blockTop:hover ~ .internet{
+    transition: all 1s ease;
+    top: -30%;
+    left: 50%;
+    display: block;
+    opacity: 1;
+
+}
+
+.devword {
+    width: 170%;
+    color: #510391;
+    position: absolute;
+    font-size: calc(0.3rem + 1vw);
+    top: 50%;
+    left: -35%;
+    z-index: 3;
+    opacity: 1;
+    transition: all 0.2s ease;
+ 
+}
+
+.devword.active {
+    display: none;
+}
+
+.devword1 {
+    width: 20%;
+    color: #510391;
+    position: absolute;
+    font-size: calc(0.2rem + 1vw);
+    top: -10%;
+    left: 60%;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.2s ease;
+ 
+}
+.blockTop:hover ~ .devword1{
+    transition: all 1s ease;
+    opacity: 1;
+
+}
+
+
+/*--------------------*/
+
+.blockgame {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 900;
+    display: none;
+    opacity: 0;
+}
+
+.blockgame.active2 {
+    display: flex;
+}
+
+.blockgame.active3 {
+    transition: all 5s ease;
+    opacity: 1;
+}
+
+.blockgame.active {
+    transition: all 2s ease;
+    opacity: 0;
+}
+
+.blockgame.active1 {
+    display: none;
+}
+
+.blockstart {
+    width: 65%;
+    height: 80%;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    z-index: 10;
+    border: 10px solid;
+    border-image: linear-gradient(to left, #510391, #e4c8fc) 1;
+    border-image-slice: 1;
+    background-image: url('космос.png');
+}
+
+.blockpassword {
+    width: 15%;
+    height: 40%;
+    border: 10px solid;
+    border-image: linear-gradient(to left, #510391, #e4c8fc) 1;
+    border-image-slice: 1;
+    border-radius: 2%;
+    position: absolute;
+    background-color: #000;
+    right: 25%;
+    top: 15%;
+    z-index: 0;
+    opacity: 1;
+}
+
+.blockpassword.active {
+    transition: all 2s ease;
+    right: 0%;
+    z-index: 10;
+}
+
+.blockpassword.active1 {
+    transition: all 2s ease;
+    z-index: 10;
+    right: 5%;
+}
+
+.pass1 {
+    width: 80%;
+    height: 15%;
+    position: absolute;
+    border-radius: 2%;
+    border: 10px solid;
+    border-image: linear-gradient(to left, #510391, #e4c8fc) 1;
+    border-image-slice: 1;
+    background-color: #000;
+    left: 5%;
+    top: 10%;
+    color: #fff;
+    font-size: 2rem;
+    font-family: "RalewayRegular";
+}
+
+.pass1.active {
+    transition: all 2s ease;
+    width: 70%;
+    height: 13%;
+    transform: translateX(7%)
+}
+
+.pass2 {
+    width: 80%;
+    height: 15%;
+    position: absolute;
+    border-radius: 2%;
+    border: 10px solid;
+    border-image: linear-gradient(to left, #510391, #e4c8fc) 1;
+    border-image-slice: 1;
+    background-color: #000;
+    left: 5%;
+    top: 35%;
+    color: #fff;
+    font-size: 2rem;
+    font-family: "RalewayRegular";
+}
+
+.pass2.active {
+    transition: all 2s ease;
+    width: 70%;
+    height: 13%;
+    transform: translateX(7%)
+}
+
+.pass3 {
+    width: 80%;
+    height: 15%;
+    position: absolute;
+    border-radius: 2%;
+    border: 10px solid;
+    border-image: linear-gradient(to left, #510391, #e4c8fc) 1;
+    border-image-slice: 1;
+    background-color: #000;
+    left: 5%;
+    top: 60%;
+    color: #fff;
+    font-size: 2rem;
+    font-family: "RalewayRegular";
+}
+
+.pass3.active {
+    transition: all 2s ease;
+    width: 70%;
+    height: 13%;
+    transform: translateX(7%)
+}
+
+@keyframes changeShape1 {
+    0% {
+        border-radius: 38% 62% 63% 40% / 41% 44% 56% 59%;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 41% 44% 56% 59% / 38% 62% 63% 40%;
+
+    }
+    50% {
+        border-radius: 38% 62% 63% 40% / 41% 44% 56% 59%;
+
+    }
+    75% {
+        border-radius: 41% 44% 56% 59% / 38% 62% 63% 40%;
+
+    }
+    100% {
+        border-radius: 38% 62% 63% 40% / 41% 44% 56% 59%;
+        transform: rotate(360deg);
+    }
+}
+  
+.amphora1 {
+    width: 60%;
+    height: 100%;
+    border: 5px solid #510391;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 0;
+}
+
+.amphora6 {
+    width: 40%;
+    height: 90%;
+    border: 5px solid #510391;
+    position: absolute;
+    right: 120%;
+    top: 20%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 0;
+}
+
+.planet {
+    width: 20%;
+    height: 35%;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 53%;
+    left: 14%;
+    transition: all 2s ease;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.planet:hover {
+    transition: all 2s ease;
+    transform: rotate(450deg);
+}
+
+.planet1 {
+    width: 20%;
+    height: 33%;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 35%;
+    left: 40%;
+    transition: all 2s ease;
+    cursor: pointer;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.planet1:hover {
+    transition: all 2s ease;
+    transform: rotate(450deg);
+}
+
+.planet1.play {
+    pointer-events: all;
+}
+
+#blockstart1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('космос1.png');
+    border-radius: 2%;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: all 2s ease;
+}
+
+#blockstart1.active {
+    z-index: 7;
+    transition: all 2s ease;
+    opacity: 1;
+}
+
+#blockstart01 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    position: absolute;
+    z-index: 2;
+    transition: all 2s ease;
+}
+
+#blockstart01.active {
+    transition: all 2s ease;
+    opacity: 0;
+}
+
+#blockstart01.active1 {
+    display: none;
+}
+
+
+.line {
+    background-color: #e4c8fc;
+    width: 100%;
+    height: 1%;
+    position: absolute;
+    top: 30%;
+    left: -0.1%;
+    border: none;
+}
+
+#people {
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+
+#people.active {
+    transition: all 5s ease;
+    opacity: 0;
+}
+
+.smsStart {
+    width: 5%;
+    top: 35%;
+    left: 5%;
+    color: #510391;
+    position: absolute;
+    font-size: calc(0.1rem + 1vw);
+}
+
+#smsStart1 {
+    width: 5%;
+    top: 50%;
+    left: 5%;
+    color: #510391;
+    position: absolute;
+    font-size: calc(0.1rem + 1vw);
+    opacity: 0;
+}
+
+#smsStart1.active {
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+#smsStart2 {
+    width: 5%;
+    top: 50%;
+    left: 5%;
+    color: #510391;
+    position: absolute;
+    font-size: calc(0.1rem + 1vw);
+    opacity: 0;
+}
+
+#smsStart2.active {
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+#smsStart3 {
+    width: 5%;
+    top: 59%;
+    left: 5%;
+    color: #510391;
+    position: absolute;
+    font-size: calc(0.1rem + 1vw);
+    opacity: 0;
+}
+
+#smsStart3.active {
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+#sms3 {
+    width: 55%;
+    top: 60.5%;
+    left: 22%;
+    color: #e4c8fc;
+    position: absolute;
+    font-size: calc(0.1rem + 0.8vw);
+}
+
+#sms3.active1 {
+    display: none;
+}
+
+#sms {
+    width: 55%;
+    top: 35.5%;
+    left: 22%;
+    color: #e4c8fc;
+    position: absolute;
+    font-size: calc(0.1rem + 0.8vw);
+}
+
+#sms1 {
+    width: 55%;
+    top: 50.5%;
+    left: 22%;
+    color: #e4c8fc;
+    position: absolute;
+    font-size: calc(0.1rem + 0.8vw);
+    opacity: 0;
+}
+
+#sms1.active1 {
+    display: none;
+}
+
+#sms2 {
+    width: 55%;
+    top: 50.5%;
+    left: 22%;
+    color: #e4c8fc;
+    position: absolute;
+    font-size: calc(0.1rem + 0.8vw);
+}
+
+#sms2.active {
+    display: none;
+}
+
+#sms1.active {
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+#smsStartPeople {
+    width: 5%;
+    top: 45%;
+    left: 5%;
+    color: #510391;
+    position: absolute;
+    font-size: calc(0.1rem + 1vw);
+    opacity: 0;
+}
+
+#smsStartPeople.active {
+    opacity: 1;
+}
+
+#smsPeople {
+    width: 55%;
+    top: 45.5%;
+    left: 12%;
+    color: #e4c8fc;
+    position: absolute;
+    font-size: calc(0.1rem + 0.8vw);
+}
+
+#smsPeople.active {
+    display: none;
+}
+
+#smsStartPeople1 {
+    width: 5%;
+    top: 45%;
+    left: 5%;
+    color: #510391;
+    position: absolute;
+    font-size: calc(0.1rem + 1vw);
+    opacity: 0;
+}
+
+#smsStartPeople1.active {
+    opacity: 1;
+}
+
+#smsPeople1 {
+    width: 55%;
+    top: 45.5%;
+    left: 12%;
+    color: #e4c8fc;
+    position: absolute;
+    font-size: calc(0.1rem + 0.8vw);
+}
+
+#smsPeople1.active {
+    display: none;
+}
+
+#smsAnswer {
+    width: 15%;
+    top: 90%;
+    left: 15%;
+    position: absolute;
+    color: #e4c8fc;
+    font-size: calc(0.2rem + 0.8vw);
+    cursor: pointer;
+}
+
+#smsAnswer1 {
+    width: 15%;
+    top: 90%;
+    left: 45%;
+    position: absolute;
+    color: #e4c8fc;
+    font-size: calc(0.2rem + 0.8vw);
+    cursor: pointer;
+}
+
+.planet2 {
+    width: 20%;
+    height: 33%;
+    position: absolute;
+    top: 18%;
+    left: 65%;
+    transition: all 2s ease;
+    cursor: pointer;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.planet2.play {
+    pointer-events: all;
+}
+
+.planet2:hover {
+    transition: all 2s ease;
+    transform: rotate(450deg);
+}
+
+
+
+
+
+#inform {
+    width: 65%;
+    top: 10%;
+    left: 5%;
+    position: absolute;
+    color: #e4c8fc;
+    font-size: calc(0.2rem + 0.8vw);
+    cursor: pointer;
+    z-index: 3;
+}
+
+#inform1 {
+    width: 65%;
+    top: 37%;
+    right: 15%;
+    position: absolute;
+    color: #e4c8fc;
+    font-size: calc(0.2rem + 0.8vw);
+    cursor: pointer;
+    z-index: 3;
+}
+
+#inform2 {
+    width: 65%;
+    top: 70%;
+    left: 10%;
+    position: absolute;
+    color: #e4c8fc;
+    font-size: calc(0.2rem + 0.8vw);
+    cursor: pointer;
+    z-index: 3;
+}
+
+#blockpassword02 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    position: absolute;
+    z-index: 1;
+    transition: all 2s ease;
+    display: none;
+    overflow: auto;
+}
+
+#blockpassword02::-webkit-scrollbar {
+    display: none; /* скрыть полосы прокрутки на Chrome, Safari, и Opera */
+}
+
+#blockpassword02.active {
+    display: block;
+}
+
+#heshs {
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    top: -8%;
+    right: 3%;
+    display: inline-block;
+    height: 5%;
+}
+
+#hesh {
+    font-size: 7rem;
+    position: absolute;
+    z-index: 2;
+    color: #9986aa;
+    animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}  
+
+#hesh1 {
+    font-size: 7rem;
+    position: absolute;
+    z-index: 2;
+    color: #9986aa;
+    left: 35%;
+    animation: fadeInOut1 2s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes fadeInOut1 {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}  
+
+#hesh2 {
+    font-size: 7rem;
+    position: absolute;
+    z-index: 2;
+    left:70%;
+    color: #9986aa;
+    animation: fadeInOut2 2s infinite;
+    animation-delay: 9s;
+}
+
+@keyframes fadeInOut2 {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}  
+
+#tests {
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    z-index: 3;
+}
+
+#test {
+    width: 70%;
+    height: 55%;
+    background-color: #9986aa;
+    border-radius: 10%;
+    border: 10px solid #510391;
+    border-bottom: 0px;
+    border-top: 0px;
+    position: absolute;
+    bottom: 40%;
+}
+
+
+
+
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+    
+#options button {
+    margin-top: 2%;
+    width: 70%;
+    height: 50px;
+    font-size: calc(0.1rem + 0.6vw);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #510391;
+    color: #000;
+    font-family: "RalewayRegular";
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#question {
+    font-family: "RalewayRegular";
+    color: #510391;
+    margin-bottom: 7%;
+}
+
+
+.amphora2 {
+    width: 23%;
+    height: 45%;
+    border: 5px solid #510391;
+    position: absolute;
+    right: -3%;
+    top: 70%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+.amphora3 {
+    width: 23%;
+    height: 45%;
+    border: 5px solid #510391;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+.amphora4 {
+    width: 43%;
+    height: 65%;
+    border: 5px solid #510391;
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+
+.amphora5 {
+    width: 43%;
+    height: 65%;
+    border: 5px solid #510391;
+    position: absolute;
+    left: -20%;
+    bottom: -90%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+#passwordPrint {
+    width: 30%;
+    height: 10%;
+    color: #510391;
+    font-family: "RalewayRegular";
+    position: absolute;
+    bottom: -55%;
+    right: 10%;
+    font-size: calc(1rem + 1.5vw);
+}
+
+
+
+
+/*---------------------------------------------------------*/
+
+
+
+
+#inform0 {
+    width: 65%;
+    top: 10%;
+    left: 5%;
+    position: absolute;
+    color: #e4c8fc;
+    font-size: calc(0.2rem + 0.8vw);
+    cursor: pointer;
+    z-index: 3;
+}
+
+#inform01 {
+    width: 65%;
+    top: 37%;
+    right: 15%;
+    position: absolute;
+    color: #e4c8fc;
+    font-size: calc(0.2rem + 0.8vw);
+    cursor: pointer;
+    z-index: 3;
+}
+
+#inform02 {
+    width: 65%;
+    top: 70%;
+    left: 10%;
+    position: absolute;
+    color: #e4c8fc;
+    font-size: calc(0.2rem + 0.8vw);
+    z-index: 3;
+}
+
+#blockpassword03 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    position: absolute;
+    z-index: 1;
+    transition: all 2s ease;
+    display: none;
+    overflow: auto;
+}
+
+#blockpassword03::-webkit-scrollbar {
+    display: none; /* скрыть полосы прокрутки на Chrome, Safari, и Opera */
+}
+
+#blockpassword03.active {
+    display: block;
+}
+
+#heshs1 {
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    top: -8%;
+    right: 3%;
+    display: inline-block;
+    height: 5%;
+}
+
+#hesh0 {
+    font-size: 7rem;
+    position: absolute;
+    z-index: 2;
+    color: #9986aa;
+    animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}  
+
+#hesh01 {
+    font-size: 7rem;
+    position: absolute;
+    z-index: 2;
+    color: #9986aa;
+    left: 35%;
+    animation: fadeInOut1 2s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes fadeInOut1 {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}  
+
+#hesh02 {
+    font-size: 7rem;
+    position: absolute;
+    z-index: 2;
+    left:70%;
+    color: #9986aa;
+    animation: fadeInOut2 2s infinite;
+    animation-delay: 9s;
+}
+
+@keyframes fadeInOut2 {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}  
+
+#tests1 {
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    z-index: 3;
+}
+
+#test1 {
+    width: 70%;
+    height: 40%;
+    background-color: #9986aa;
+    border-radius: 10%;
+    border: 10px solid #510391;
+    border-bottom: 0px;
+    border-top: 0px;
+    position: absolute;
+    bottom: 40%;
+}
+
+.container1 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+    
+#options1 button {
+    margin-top: 2%;
+    width: 70%;
+    height: 50px;
+    font-size: calc(0.1rem + 0.6vw);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #510391;
+    color: #000;
+    font-family: "RalewayRegular";
+}
+
+#options1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#question1 {
+    font-family: "RalewayRegular";
+    color: #510391;
+    margin-bottom: 7%;
+}
+
+
+.amphora02 {
+    width: 23%;
+    height: 45%;
+    border: 5px solid #510391;
+    position: absolute;
+    right: -3%;
+    top: 70%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+.amphora03 {
+    width: 23%;
+    height: 45%;
+    border: 5px solid #510391;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+.amphora04 {
+    width: 43%;
+    height: 65%;
+    border: 5px solid #510391;
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+
+.amphora05 {
+    width: 43%;
+    height: 65%;
+    border: 5px solid #510391;
+    position: absolute;
+    left: -20%;
+    bottom: -90%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+#blockpassword2 {
+    width: 30%;
+    height: 10%;
+    color: #510391;
+    font-family: "RalewayRegular";
+    position: absolute;
+    bottom: -55%;
+    right: 10%;
+    font-size: 3rem;
+}
+
+#blockstart2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('космос1.png');
+    border-radius: 2%;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: all 2s ease;
+}
+
+#blockstart2.active {
+    z-index: 7;
+    transition: all 2s ease;
+    opacity: 1;
+}
+
+#passwordPrint1 {
+    width: 30%;
+    height: 10%;
+    color: #510391;
+    font-family: "RalewayRegular";
+    position: absolute;
+    bottom: -55%;
+    right: 10%;
+    font-size: calc(1rem + 1.5vw);
+}
+
+/*-----------------------------------------------------------*/
+
+
+
+#inform011 {
+    width: 65%;
+    top: 10%;
+    left: 5%;
+    position: absolute;
+    color: #e4c8fc;
+    font-size: calc(0.2rem + 0.8vw);
+    cursor: pointer;
+    z-index: 3;
+}
+
+#inform0111 {
+    width: 65%;
+    top: 37%;
+    right: 15%;
+    position: absolute;
+    color: #e4c8fc;
+    font-size: calc(0.2rem + 0.8vw);
+    cursor: pointer;
+    z-index: 3;
+}
+
+#inform0112 {
+    width: 65%;
+    top: 70%;
+    left: 10%;
+    position: absolute;
+    color: #e4c8fc;
+    font-size: calc(0.2rem + 0.8vw);
+    cursor: pointer;
+    z-index: 3;
+}
+
+#blockpassword04 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    position: absolute;
+    z-index: 1;
+    transition: all 2s ease;
+    display: none;
+    overflow: auto;
+}
+
+#blockpassword04::-webkit-scrollbar {
+    display: none; /* скрыть полосы прокрутки на Chrome, Safari, и Opera */
+}
+
+#blockpassword04.active {
+    display: block;
+}
+
+#heshs01 {
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    top: -8%;
+    right: 3%;
+    display: inline-block;
+    height: 5%;
+}
+
+#hesh011 {
+    font-size: 7rem;
+    position: absolute;
+    z-index: 2;
+    color: #9986aa;
+    animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}  
+
+#hesh0111 {
+    font-size: 7rem;
+    position: absolute;
+    z-index: 2;
+    color: #9986aa;
+    left: 35%;
+    animation: fadeInOut1 2s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes fadeInOut1 {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}  
+
+#hesh0112 {
+    font-size: 7rem;
+    position: absolute;
+    z-index: 2;
+    left:70%;
+    color: #9986aa;
+    animation: fadeInOut2 2s infinite;
+    animation-delay: 9s;
+}
+
+@keyframes fadeInOut2 {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}  
+
+#tests11 {
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    z-index: 3;
+}
+
+#test11 {
+    width: 70%;
+    height: 40%;
+    background-color: #9986aa;
+    border-radius: 10%;
+    border: 10px solid #510391;
+    border-bottom: 0px;
+    border-top: 0px;
+    position: absolute;
+    bottom: 40%;
+}
+
+.container11 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+    
+#options11 button {
+    margin-top: 2%;
+    width: 70%;
+    height: 50px;
+    font-size: calc(0.1rem + 0.6vw);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #510391;
+    color: #000;
+    font-family: "RalewayRegular";
+}
+
+#options11 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#question11 {
+    font-family: "RalewayRegular";
+    color: #510391;
+    margin-bottom: 7%;
+}
+
+
+.amphora012 {
+    width: 23%;
+    height: 45%;
+    border: 5px solid #510391;
+    position: absolute;
+    right: -3%;
+    top: 70%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+.amphora013 {
+    width: 23%;
+    height: 45%;
+    border: 5px solid #510391;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+.amphora014 {
+    width: 43%;
+    height: 65%;
+    border: 5px solid #510391;
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+
+.amphora015 {
+    width: 43%;
+    height: 65%;
+    border: 5px solid #510391;
+    position: absolute;
+    left: -20%;
+    bottom: -90%;
+    animation: changeShape1 13s infinite ease-in-out; /* Продолжительность анимации 10 секунд, повторять бесконечно */
+    z-index: 2;
+}
+
+#blockstart3 {
+    width: 100%;
+    height: 100%;
+    background-image: url('космос1.png');
+    border-radius: 2%;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: all 2s ease;
+}
+
+#blockstart3.active {
+    z-index: 7;
+    transition: all 2s ease;
+    opacity: 1;
+}
+
+#passwordPrint2 {
+    width: 30%;
+    height: 10%;
+    color: #510391;
+    font-family: "RalewayRegular";
+    position: absolute;
+    bottom: -55%;
+    right: 10%;
+    font-size: calc(1rem + 1.5vw);
+}
+

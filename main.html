@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberAware</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="иконка.png" type="image/x-icon">
+</head>
+<body onload="play()" id="body">
+
+    <div class="header">
+        <h1 class="Name">CyberAware</h1>
+        <h1 class="home" onclick="scrollToTarget()" id="myButton">Home</h1>
+    </div>
+    
+    <div class="block3">
+        <div id="block1"></div>
+        <div id="block2" onclick="right()"></div>
+        <img src="vk.png" class="image" onclick="vcontacte()">
+        <img src="tg.png" class="image01" onclick="telegram()">
+    </div>
+
+
+    <div class="amphora" id="amphora"></div>
+
+    <h1 class="save">безопасность</h1>
+
+    <div id="cartss">
+        <h1 id="newss">CYBER.NEWS</h1>
+        <div class="carts">
+        
+            <div class="cart" id="card">
+                <img src="кас.png" id="kasp" onclick="News()">
+            </div>
+            <div class="cart2" id="card">
+                <img src="госуслуги.png" id="gos" onclick="News1()">
+            </div>
+            <div class="cart3" id="card">
+                <img src="зож.jpg" id="zog" onclick="News2()">
+            </div>
+        </div>
+    </div>
+
+    <div class="cartsDev">
+        <div class="blockTop" onmouseover="AddText()" onmouseout="DeleteText()" ></div>
+        <div class="cartDev" id="card"></div>
+        <h1 class="nameDev">Сэр Тимоти Джон Бернерс-Ли</h1>
+        <div class="cercle"></div>
+        <div class="cercle1"></div>
+        <div class="cercle2"></div>
+        <img src="devops.png" class="devops">
+        <div class="internet" onclick="internet()">
+            ?
+        </div>
+        <h1 class="devword" id="devtext"></h1>
+        <h1 class="devword1" id="devtext1">основатель WWW</h1>
+
+    </div>
+
+
+
+    <div class="blockgame">
+        <div class="blockstart">
+            <div class="serclegame"></div>
+            <div class="serclegame1"></div>
+            <div class="serclegame2"></div>
+            <img src="planet1.png" class="planet" onclick="start()">
+            <img src="planet.png" class="planet1" onclick="start1()">
+            <img src="planet2.png" class="planet2" onclick="start2()">
+
+
+            <div id="blockstart1">
+                <div id="blockstart01">
+                    <hr class="line">
+                    <img src="people.png" id="people">
+                    <h1 class="smsStart">Разработчик:</h1>
+                    <h1 id="sms"></h1>
+                    <h1 id="smsStart1">Разработчик:</h1>
+                    <h1 id="sms1">..._...</h1>
+                    <h1 id="smsStart2">Разработчик:</h1>
+                    <h1 id="sms2"></h1>
+                    <h1 id="smsStart3">Разработчик:</h1>
+                    <h1 id="sms3"></h1>
+
+                    <h1 id="smsStartPeople">Вы:</h1>
+                    <h1 id="smsPeople"></h1>
+                    <h1 id="smsStartPeople1">Вы:</h1>
+                    <h1 id="smsPeople1"></h1>
+
+                    <h1 id="smsAnswer" onclick="Deletetext1()">По чем дошик?</h1>
+                    <h1 id="smsAnswer1" onclick="Deletetext()">Да, по делу</h1>
+                </div>
+                <div id="blockpassword02">
+                    <div id="heshs">
+                        <h1 id="hesh">*</h1>
+                        <h1 id="hesh1">*</h1>
+                        <h1 id="hesh2">*</h1>
+                    </div>
+                    <h1 id="inform"></h1>
+                    <h1 id="inform1"></h1>
+                    <h1 id="inform2"></h1>
+                    <div class="amphora2"></div>
+                    <div class="amphora3"></div>
+                    <div class="amphora4"></div>
+                    <div class="amphora5"></div>
+                    <div id="tests">
+                        <div id="test">
+                            <div class="container">
+                                <div id="question"></div>
+                                <div id="options">
+                                  <button onclick="checkAnswer(0)" id="button1"></button>
+                                  <button onclick="checkAnswer(1)" id="button2"></button>
+                                  <button onclick="checkAnswer(2)" id="button3"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="passwordPrint"></div>
+
+                </div>
+            </div>
+
+            <div id="blockstart2">
+                <div id="blockpassword03">
+                    <div id="heshs1">
+                        <h1 id="hesh0">*</h1>
+                        <h1 id="hesh01">*</h1>
+                        <h1 id="hesh02">*</h1>
+                    </div>
+                    <h1 id="inform0"></h1>
+                    <h1 id="inform01"></h1>
+                    <h1 id="inform02"></h1>
+                    <div class="amphora02"></div>
+                    <div class="amphora03"></div>
+                    <div class="amphora04"></div>
+                    <div class="amphora05"></div>
+                    <div id="tests1">
+                        <div id="test1">
+                            <div class="container1">
+                                <div id="question1"></div>
+                                <div id="options1">
+                                  <button onclick="checkAnswer1(0)" id="button01"></button>
+                                  <button onclick="checkAnswer1(1)" id="button02"></button>
+                                  <button onclick="checkAnswer1(2)" id="button03"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="passwordPrint1"></div>
+
+                </div>
+            </div>
+
+
+            <div id="blockstart3">
+                <div id="blockpassword04">
+                    <div id="heshs01">
+                        <h1 id="hesh011">*</h1>
+                        <h1 id="hesh0111">*</h1>
+                        <h1 id="hesh0112">*</h1>
+                    </div>
+                    <h1 id="inform011"></h1>
+                    <h1 id="inform0111"></h1>
+                    <h1 id="inform0112"></h1>
+                    <div class="amphora012"></div>
+                    <div class="amphora013"></div>
+                    <div class="amphora014"></div>
+                    <div class="amphora015"></div>
+                    <div id="tests11">
+                        <div id="test11">
+                            <div class="container11">
+                                <div id="question11"></div>
+                                <div id="options11">
+                                  <button onclick="checkAnswer11(0)" id="button011"></button>
+                                  <button onclick="checkAnswer11(1)" id="button012"></button>
+                                  <button onclick="checkAnswer11(2)" id="button013"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="passwordPrint2"></div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="blockpassword" id="blockpassword">
+            <input class="pass1" maxlength="8" onkeyup="checkInput()"></input>
+            <input class="pass2" maxlength="8" onkeyup="checkInput1()"></input>
+            <input class="pass3" maxlength="8" onkeyup="checkInput2()"></input>
+        </div>
+    </div>
+    
+
+    <div class="amphora1"></div>
+    <div class="amphora6"></div>
+    <div class="amphora7"  onclick="telegram()">
+        <img src="tg.png" id="tgg">
+    </div>
+    <div class="amphora8" onclick="vcontacte()">
+        <img src="vk.png" id="vkk">
+    </div>
+    <div class="amphora91">
+        <div class="amphora9" onclick="PlayGame()">
+            <div class="triangle"></div>
+        </div>
+        <div class="cercle5"></div>
+        <div class="cercle6"></div>
+    </div>
+
+    <hr id="pre"></hr>
+
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+    <script src="animate.js"></script>
+    <script src="animate1.js"></script>
+    <script src="animate2.js"></script>
+    <script src="animateBlock.js"></script>
+    <script src="news.js"></script>
+
+    <h1 id="show">CyberAware - ваш надежный партнер в интернет безопасности. Мы предоставляем информацию об основах безопасности в сети</h1>
+
+    <h1 id="hello">Участник конкруса "Крит-2024" Фаттахов Ришат приветствует жюри конкруса!</h1>
+
+    <h1 id="textt">Это наша прерогатива!</h1>
+</body>
+</html>
