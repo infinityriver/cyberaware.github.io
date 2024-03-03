@@ -1,6 +1,6 @@
 function checkInput() {
     var input = document.querySelector('.pass1').value;
-    if (input === '3te6wd9') {
+    if (input === '7264985') {
       myFunction();
     }
 }
@@ -24,7 +24,7 @@ function myFunction() {
 
 function checkInput1() {
   var input = document.querySelector('.pass2').value;
-  if (input === 'fjw8d26') {
+  if (input === '1638256') {
     myFunction1();
   }
 }
@@ -47,7 +47,7 @@ function myFunction1() {
 
 function checkInput2() {
   var input = document.querySelector('.pass3').value;
-  if (input === 'gwf6tr7') {
+  if (input === '9253815') {
     myFunction2();
   }
 }

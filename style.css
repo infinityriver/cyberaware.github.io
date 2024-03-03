@@ -26,20 +26,20 @@ body {
 }
 
 #hello {
-    color: #510391;
-    width: 55%;
-    font-size: calc(0.1rem + 0.6vw);
+    color: #e4c8fc;
+    width: 60%;
+    font-size: calc(0.4rem + 0.6vw);
     position: absolute;
-    left: 30%;
+    left: 25%;
 }
 
 #textt {
     position: absolute;
-    width: 30%;
+    width: 35%;
     top: 37%;
     left: 14%;
     color:#510391;
-    font-size: calc(0.1rem + 0.6vw);
+    font-size: calc(0.3rem + 0.6vw);
 }
 
 #show {
@@ -52,7 +52,7 @@ body {
 }
 
 #show.active {
-    transition: all 30s ease;
+    transition: all 40s ease;
     transform: translateX(-210%);
 }
 
