@@ -68,7 +68,7 @@ const questions2 = [
 displayQuestion2()
 
 function PrintPass02() {
-  const text_password2 = 'gwf6tr7';
+  const text_password2 = '9253815';
   var index_password2 = 0;
   var printed_password2 = false;
   

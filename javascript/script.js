@@ -78,7 +78,7 @@ const questions = [
 displayQuestion()
 
 function PrintPass() {
-  const text_password = '3te6wd9';
+  const text_password = '7264985';
   var index_password = 0;
   var printed_password = false;
   
