@@ -125,7 +125,6 @@ function AddText1() {
 
 function PrintText_1() {
     const element_1 = document.getElementById('devtext');
-     // Убрать класс скрывающий элемент
     if (index_1 < text_1.length) {
         element_1.textContent += text_1[index_1]
 

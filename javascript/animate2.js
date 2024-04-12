@@ -1,10 +1,15 @@
+
+
+
 function start2() {
-    var elementstart11 = document.getElementById('blockstart3');
+    // var elementstart11 = document.getElementById('blockstart3');
     elementstart11.classList.add('active')
     var elementstart12 = document.getElementById('blockpassword04');
     elementstart12.classList.add('active')
     setTimeout(Printpassworddd, 500)
 }
+
+
 
 const text_passworddd = 'Вредоносное программное обеспечение (или вредоносный код) - это программы, созданные для нанесения вреда компьютеру или украденных данных. Оно может включать в себя различные типы угроз, такие как вирусы, черви, троянские программы, шпионское программное обеспечение и рекламное ПО (adware). Вредоносное программное обеспечение может проникать в компьютер через небезопасные веб-сайты, электронные письма с вредоносными вложениями или скачиванием недоверенных файлов из интернета.';
 var index_passworddd = 0;
